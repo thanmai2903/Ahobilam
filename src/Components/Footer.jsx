@@ -2,9 +2,9 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div className=" bg-amber-950 cursor-pointer">
-        <div className="flex text-white p-5">
-          <div className="mr-5 lg:mr-10 mt-10 lg:ml-20">
+      <div className="w-full  mt-5 bg-amber-950 cursor-pointer">
+        <div className="flex flex-wrap text-white p-5">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               About Ahobilam
               <li className="mt-5 text-slate-400">Nallamalla Hills</li>
@@ -15,7 +15,7 @@ function Footer() {
               <li className="text-slate-400">Math</li>
             </ul>
           </div>
-          <div className="mr-5 lg:mr-8 mt-10 lg:ml-20">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               Nava Narasimha Temples
               <li className="mt-5 text-slate-400">Interactive</li>
@@ -25,7 +25,7 @@ function Footer() {
               <li className="text-slate-400">Temples</li>
             </ul>
           </div>
-          <div className="mr-5 lg:mr-10 mt-10 lg:ml-20">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               Panchangam
               <li className="sm:mt-10 mt-5 text-slate-400">Monthly</li>
@@ -34,7 +34,7 @@ function Footer() {
               <li className="text-slate-400">Panchangam</li>
             </ul>
           </div>
-          <div className="mr-5 lg:mr-10 mt-10 lg:ml-20">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               Festivals
               <li className="sm:mt-10 mt-5 text-slate-400">Annual</li>
@@ -43,7 +43,7 @@ function Footer() {
               <li className="text-slate-400">Festivals</li>
             </ul>
           </div>
-          <div className="mr-5 lg:mr-10 mt-10 lg:ml-20">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               LIBRARY
               <li className="sm:mt-10 mt-5 text-slate-400">Photos</li>
@@ -52,7 +52,7 @@ function Footer() {
               <li className="text-slate-400">Video</li>
             </ul>
           </div>
-          <div className="mr-5 lg:mr-10 mt-10 lg:ml-20">
+          <div className="w-full sm:w-1/4 lg:w-1/6 p-4">
             <ul>
               Quick Links
               <li className="mt-5 text-slate-400">Contact Us</li>
@@ -62,10 +62,10 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center mt-5">
           {" "}
           <img
-            className="sm:ml-60 sm:mt-3 lg:ml-[580px] lg:mt-10"
+            className="w-32 sm:w-40 lg:w-20"
             src="https://ahobilamtemple.com/ahobilam/assets/images/Path%2020768.png"
           />
         </div>
