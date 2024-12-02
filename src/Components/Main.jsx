@@ -6,30 +6,6 @@ function Main() {
     time: "",
     day: "",
   });
-  const Panchangam = ({ dateTime, panchangam }) => (
-    <button className="bg-slate-300 bg-cover mb-10">
-      <div className=" text-4xl p-5 text-amber-950">Panchangam</div>
-      <div className="flex">
-        <div>
-          <img
-            className="w-96 lg:w-[700px] mt-10 lg:mt-32 lg:ml-28 lg:mr-20"
-            src="https://ahobilamtemple.com/ahobilam/assets/images/Image%20122.png"
-          />
-        </div>
-        <div className="sm:ml-5 lg:text-xl text-left sm:mr-10 lg:mr-28 p-10 lg:p-36">
-          <button className="border-black bg-white p-4 rounded-lg">
-            <div>{`Date: ${dateTime.date}`}</div>
-            <div>{`Time: ${dateTime.time}`}</div>
-            <div>{`Day: ${dateTime.day}`}</div>
-            <div>{`Tithi: ${panchangam.tithi}`}</div>
-            <div>{`Paksha: ${panchangam.paksha}`}</div>
-            <div>{`Masa: ${panchangam.masa}`}</div>
-            <div>{`Nakshatra: ${panchangam.nakshatra}`}</div>
-          </button>
-        </div>
-      </div>
-    </button>
-  );
   const [panchangam, setPanchangam] = useState({
     tithi: "Padyami & Vidiya",
     paksha: "Shukla",
@@ -72,7 +48,7 @@ function Main() {
     };
 
     const handlePrevClick = () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      currentIndex = (currentIndex - 1) % images.length;
       updateCarousel();
     };
     next.addEventListener("click", handleNextClick);
@@ -160,8 +136,8 @@ function Main() {
 
         <div>
           <img
-            className="sm:w-200 ml-10 sm:mt-20 lg:mt-[-70px]"
-            src="https://ahobilamtemple.com/ahobilam/assets/images/Untitled_Artwork.png"
+            className="sm:w-[4000px] lg:mt-16 ml-10 sm:mt-20"
+            src="https://ahobilamtemple.com/ahobilam/assets/images/Image%20121.png"
           />
         </div>
       </div>
@@ -184,6 +160,49 @@ function Main() {
             className="sm:w-200 lg:w-[500px] sm:mr-10 lg:mr-20 ml-10 sm:mt-10 lg:mt-[70px]"
             src="https://ahobilamtemple.com/ahobilam/assets/images/routes/bus-route.png"
           />
+        </div>
+      </div>
+      <div className="flex bg-slate-100 p-2 mb:10">
+        <div>
+          <div className="text-4xl  sm:ml-10 lg:ml-20 text-amber-950">
+            Panchangam
+          </div>
+          <img
+            className="sm:w-96 lg:w-[700px] sm:mr-10 lg:mr-10 ml-10 sm:mt-20 lg:mt-[100px]"
+            src="https://ahobilamtemple.com/ahobilam/assets/images/Image%20122.png"
+          />
+        </div>
+        <div className="sm:ml-5 lg:text-xl text-left sm:mr-10 lg:mr-28 p-10 lg:p-36">
+          <button className="border-black bg-slate-200  p-8 rounded-lg">
+            <div className="flex">
+              <div className="text-xl">Date:</div>
+              <div className="text-left sm:ml-4 lg:ml-14">{dateTime.date}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl mr-5 lg:mr-14 text-amber-950">Time:</div>
+              <div>{dateTime.time}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl mr-5  text-amber-950">Day:</div>
+              <div className="lg:ml-12">{dateTime.day}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl text-amber-950">Tithi:</div>
+              <div className="sm:ml-3 lg:ml-14">{panchangam.tithi}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl mr-5 text-amber-950">Paksha:</div>
+              <div className="lg:ml-7">{panchangam.paksha}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl mr-8 text-amber-950">Masa:</div>
+              <div className="lg:ml-7">{panchangam.masa}</div>
+            </div>
+            <div className="flex">
+              <div className="text-xl mr-5 text-amber-950">Nakshatra:</div>
+              <div>{panchangam.nakshatra}</div>
+            </div>
+          </button>
         </div>
       </div>
 

@@ -4,8 +4,8 @@ function Header() {
     <div className="bg-amber-950 p-3 flex">
       <div>
         <img
-          className="sm:ml-3 lg:mr-20 cursor-pointer"
-          src="https://ahobilamtemple.com/ahobilam/assets/images/New%20Logo.png"
+          className="w-10 lg:w-16 sm:ml-3 lg:mr-16 lg:ml-20 cursor-pointer"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauQgsGxwWrf-ntjRierUP79-6c5aCPhOI8w&s"
         />
       </div>
       <div className="hidden lg:block text-white cursor-pointer lg:mt-5">
